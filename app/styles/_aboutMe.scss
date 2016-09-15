@@ -1,0 +1,36 @@
+#aboutMe {
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.68);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .text {
+    background-color: transparent;
+    padding: 200px 20%;
+    width: 100%;
+    z-index: 30;
+    position: relative;
+    h3 {
+      margin: 0;
+      text-transform: lowercase;
+      color: $lightText;
+      text-align: center;
+      font-size: 36px;
+      span {
+        color: rgba($brand-primary, 0.8);
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 32px;
+      }
+    }
+  }
+}
+

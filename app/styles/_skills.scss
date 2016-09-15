@@ -1,0 +1,139 @@
+#skills {
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 5% 0;
+  z-index: 30;
+  background: url("../images/background1.jpg") center center no-repeat;
+  background-position-x: fixed;
+  background-size: cover;
+  overflow: hidden;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    :first-child {
+      position: relative;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(255, 255, 255, 0.48);
+      transform: rotate(47deg);
+      width: 2000px;
+      height: 1000px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      z-index: 10;
+    }
+    :nth-child(2) {
+      position: relative;
+      bottom: 200%;
+      left: -1px;
+      background-color: rgba(125, 125, 125, 0.7);
+      transform: rotate(180deg);
+      width: 35%;
+      height: 250%;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      z-index: 10;
+    }
+    :nth-child(3) {
+      position: absolute;
+      bottom: -100px;
+      right: -1px;
+      background-color: rgba(125, 125, 125, 0.4);
+      transform: rotate(-8deg);
+      width: 35%;
+      height: 250%;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      z-index: 10;
+    }
+  }
+  .skills {
+    width: 100%;
+    height: 90%;
+    z-index: 30;
+    position: relative;
+    .wrapper {
+      position: relative;
+      height: 730px;
+      transition: all 0.4s ease;
+      .skill:first-of-type {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background-color: rgba($darkText, 0.8);
+        padding: 30px;
+        color: $lightText;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgba($darkText, 0.9);
+        }
+      }
+      .skill:nth-of-type(2) {
+        width: 390px;
+        height: 390px;
+        border-radius: 50%;
+        background-color: rgba($darkText, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: $lightText;
+        position: absolute;
+        bottom: 0;
+        transition: all 0.4s ease;
+        left: 12%;
+        &:hover {
+          background-color: rgba($darkText, 0.9);
+        }
+      }
+      .skill:nth-of-type(3) {
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        background-color: rgba($darkText, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        color: $lightText;
+        position: absolute;
+        bottom: 30%;
+        left: 32%;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgba($darkText, 0.90);
+        }
+      }
+      .skill:hover {
+        padding: 0;
+      }
+      .text {
+        border-radius: 50%;
+        border: 4px solid rgba($lightText, 0.2);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.4s ease;
+        padding: 10px;
+      }
+      .skill:hover .text {
+        padding: 44px;
+        border: 1px solid $brand-primary;
+      }
+    }
+
+    h4 {
+      color: $brand-primary;
+      font-size: 20px;
+    }
+  }
+}
+

@@ -1,0 +1,167 @@
+@media (max-width: 800px) {
+  .header-fixed {
+    background-image: linear-gradient(to left, rgba(black, 0.6) 22%, rgba($lightText, 0) 64%);
+  }
+  header {
+    .shape {
+      stroke-dashoffset: -245;
+      stroke-width: 6px;
+    }
+    .text{
+      font-size: 14px;
+    }
+  }
+  #whatWeDo {
+    .skills {
+      .wrapper {
+        .skill:nth-of-type(3) {
+          right: 2%;
+          left: auto;
+        }
+        .skill:nth-of-type(2), .skill:first-of-type {
+          left: 2%;
+        }
+      }
+    }
+  }
+
+  #aboutUs {
+    .text {
+      padding: 200px 9%;
+    }
+  }
+
+  #whoWeAre .dejan {
+    article {
+         &:hover .overlay {
+          right: 480px;
+        }
+    }
+  }
+
+  #aboutUs {
+    .text {
+      padding: 150px 20%;
+     }
+  }
+}
+
+@media (max-width: 660px) {
+
+  .primary {
+    display: none;
+  }
+
+  #mobileNav {
+    display: block !important;
+  }
+
+  #aboutUs {
+    .text {
+      padding: 100px 5%;
+      h3 {
+        font-size: 24px;
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  #whatWeDo {
+    .overlay :first-child {
+      left: -610px;
+    }
+    .skills {
+      .wrapper {
+        height: 900px;
+        .skill:nth-of-type(3) {
+          right: 2%;
+          left: auto;
+          bottom: 32%;
+        }
+        .skill:nth-of-type(2) {
+          left: 2%;
+          width: 350px;
+          height: 350px;
+        }
+        .skill:first-of-type {
+          left: -2%;
+          width: 350px;
+          height: 350px;
+        }
+      }
+    }
+  }
+
+  #whoWeAre {
+    .team {
+      flex-direction: column;
+      article {
+        width: 95%;
+        height: 320px;
+      }
+      .edge {
+        width: 60px;
+        height: 320px;
+        border-top: 320px solid #f1f1f1;
+      }
+      aside {
+        width: 100%;
+        height: auto;
+        div {
+          padding: 0 5%;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+    .dejan {
+      article {
+        &:hover .overlay {
+          right: 580px;
+        }
+      }
+    }
+    .drobke {
+      align-items: flex-end;
+      article {
+        .overlay {
+          left: -240px;
+        }
+        &:hover .overlay {
+          left: 400px;
+        }
+      }
+    }
+    .teamSocial {
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .footer .text .social {
+    padding-bottom: 40px;
+    a i {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .dejan {
+    article {
+      &:hover .overlay {
+        right: 480px;
+      }
+    }
+  }
+
+  .mladja {
+    article {
+      &:hover .overlay {
+        right: 480px;
+      }
+    }
+  }
+}

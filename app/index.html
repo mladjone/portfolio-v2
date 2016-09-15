@@ -17,6 +17,9 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -24,7 +27,89 @@
   </head>
   <body>
    
-    
+    <header>
+      <nav class="primaryNavigation">
+          <ul>
+              <li class="svg-wrapper">
+                <a href="#aboutMe">
+                  <svg height="40" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="40" width="160" />
+                      <div class="text">about me</div>
+                  </svg>
+                </a>
+              </li>
+              <li class="svg-wrapper">
+                <a href="#skills">
+                  <svg height="40" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="40" width="160" />
+                      <div class="text">skills</div>
+                  </svg>
+                </a>
+              </li>
+              <li class="svg-wrapper">
+                <a href="#portfolio">
+                  <svg height="40" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="40" width="160" />
+                      <div class="text">portfolio</div>
+                  </svg>
+                </a>
+              </li>
+              <li class="svg-wrapper">
+                <a href="#contact">
+                  <svg height="40" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="40" width="160" />
+                      <div class="text">contact</div>
+                  </svg>
+                </a>
+              </li>
+          </ul>
+      </nav>
+
+      <aside id="mobileNav">
+          <span  id="openMenu" class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+      </aside>
+
+      <nav class="mobile">
+          <aside id="mobileNav2">
+              <span id="closeMenu" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </aside>
+
+          <ul>
+              <li><a href="#aboutMe">about me</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
+          </ul>
+          <div class="overlay"></div>
+      </nav>
+    </header>
+
+    <section id="doubleWrapper">
+      <section id="hero">
+        <div id="particles-js"></div>
+        <div class="overlay">
+            <div class="logo">
+                <h1>mladen orozovic</h1>
+                <h2>web developer</h2>
+            </div>
+        </div>
+        <aside>
+            <a id="moveDown" href="#aboutMe">
+                <span class="fa fa-angle-down" aria-hidden="true"></span>
+            </a>
+        </aside>
+      </section>
+      
+      <section id="aboutMe">
+        <div class="text">
+          <h3><span id="pointHere"></span><span class="blinking">|</span></h3>
+        </div>
+      </section>
+    </section>
+
+
+
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
